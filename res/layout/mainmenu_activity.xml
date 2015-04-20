@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainholder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmainpage"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/logoholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mainlogohead" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/sideiconholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp" >
+
+                <Button
+                    android:id="@+id/Button03"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/fbbuttons" />
+
+                <Button
+                    android:id="@+id/Button02"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/twitterlbuttons" />
+
+                <Button
+                    android:id="@+id/Button01"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bloggerbuttons" />
+
+                <Button
+                    android:id="@+id/button1"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/lnkdinbuttons" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/councilbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="left|center_vertical"
+                	android:text="The Council"
+                	android:textColor="#ffffff"
+                	android:textSize="23sp"
+                	android:background="@drawable/lighterback"
+                    android:drawableLeft="@drawable/council" />
+
+                <Button
+                    android:id="@+id/conferencebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/darkerback"
+                    android:drawableLeft="@drawable/annualcon"
+                    android:gravity="left|center_vertical"
+                    android:text="Annual Conference"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <Button
+                    android:id="@+id/workshopseminarsbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lighterback"
+                    android:drawableLeft="@drawable/workshopseminars"
+                    android:gravity="left|center_vertical"
+                    android:text="Workshop &amp; Seminars"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <Button
+                    android:id="@+id/studiespresentationbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/darkerback"
+                    android:drawableLeft="@drawable/studiesl"
+                    android:gravity="left|center_vertical"
+                    android:text="Studies And Presentations"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <Button
+                    android:id="@+id/membersbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/lighterback"
+                    android:drawableLeft="@drawable/members"
+                    android:gravity="left|center_vertical"
+                    android:text="Members"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <Button
+                    android:id="@+id/becomeamemberbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/darkerback"
+                    android:drawableLeft="@drawable/becomemember"
+                    android:gravity="left|center_vertical"
+                    android:text="Become a Member"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/Button05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/blackanimrback"
+                    android:drawableLeft="@drawable/dummyback"  
+                    android:visibility="invisible"                  
+                     />
+
+                <Button
+                    android:id="@+id/Button06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:background="@drawable/blackanimrback"
+                    android:drawableLeft="@drawable/dummyback"
+                    android:visibility="invisible" 
+                   />
+
+                <Button
+                    android:id="@+id/Button07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:background="@drawable/blackanimrback"
+                    android:drawableLeft="@drawable/dummyback"
+                    android:visibility="invisible" 
+                    />
+
+                <Button
+                    android:id="@+id/Button08"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/blackanimrback"
+                    android:drawableLeft="@drawable/dummyback"
+                    android:visibility="invisible" 
+                     />
+
+                <Button
+                    android:id="@+id/Button09"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   android:background="@drawable/blackanimrback"
+                    android:drawableLeft="@drawable/dummyback"
+                    android:visibility="invisible" 
+                    />
+
+                <Button
+                    android:id="@+id/Button10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blackanimrback"
+                    android:drawableLeft="@drawable/dummyback"
+                    android:visibility="invisible" 
+                     />
+            </LinearLayout>
+
+        </FrameLayout>
+</LinearLayout>
+</LinearLayout>

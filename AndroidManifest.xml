@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.AoA.ftthconference"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+       <permission
+    android:name="com.AoA.ftthconference.permission.MAPS_RECEIVE"
+    android:protectionLevel="signature"/>
+  <uses-permission android:name="com.AoA.ftthconference.permission.MAPS_RECEIVE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-feature
+    android:glEsVersion="0x00020000"
+    android:required="true"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.AoA.ftthconference.BaseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.AoA.ftthconference.MainMenuActivity"
+           	android:screenOrientation="portrait"
+             >
+       
+        </activity>
+        <activity
+            android:name="com.AoA.ftthconference.CouncilActivity"
+            	android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name="com.AoA.ftthconference.WorkshopSeminarActivity"
+            	android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name="com.AoA.ftthconference.StudiesPresentationActivity"
+            	android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name="com.AoA.ftthconference.MembersActivity"
+            	android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name="com.AoA.ftthconference.BecomeAmemberActivity"
+            android:windowSoftInputMode="stateHidden"
+            	android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name="com.AoA.ftthconference.Conference_activity"
+            
+            android:parentActivityName="com.AoA.ftthconference.BaseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.AoA.ftthconference.BaseActivity" />
+        </activity>
+        <activity
+            android:name="com.AoA.ftthconference.SplashActivity"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+      		android:name="com.google.android.maps.v2.API_KEY"
+      		android:value="AIzaSyAp2dRxlA27B0F8r3KKD28z4iv-YqvZz0U"/>
+    </application>
+
+</manifest>

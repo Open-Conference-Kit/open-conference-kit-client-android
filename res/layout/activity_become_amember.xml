@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BecomeAmemberActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollhold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/membershipinformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/workshopheader"
+                android:text="Membership Information"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/Typeofmembership"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/becomemembertextfield"
+                android:gravity="center"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="Type of Membership" />
+
+            <EditText
+                android:id="@+id/nameoforganization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/becomemembertextfield"
+                android:gravity="center"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="Name of Organization" />
+
+            <EditText
+                android:id="@+id/organizationwebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/becomemembertextfield"
+                android:gravity="center"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="Organization Website" />
+
+            <EditText
+                android:id="@+id/contactperson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/becomemembertextfield"
+                android:gravity="center"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="Contact Person" />
+
+            <EditText
+                android:id="@+id/jobtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/becomemembertextfield"
+                
+                android:ems="10"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:hint="Job Title" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/becomemembertextfield"
+                android:gravity="center"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/contactnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:background="@drawable/becomemembertextfield"
+                android:textColor="#ffffff"
+                android:ems="10"
+                android:hint="Contact Number" >
+
+                
+            </EditText>
+
+            <Button
+                android:id="@+id/apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/morebackground"
+                android:text="Apply"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

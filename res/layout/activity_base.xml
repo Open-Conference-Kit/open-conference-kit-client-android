@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainholder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmainpage"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/logoholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mainlogohead" />
+
+        <LinearLayout
+            android:id="@+id/navholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/nav" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BaseActivity" >
+
+        <FrameLayout
+            android:id="@+id/sideiconholder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/councilbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/council" />
+
+                <Button
+                    android:id="@+id/conferencebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/annualcon" />
+
+                <Button
+                    android:id="@+id/workshopseminarsbutton"
+                        android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/workshopseminars" />
+
+                <Button
+                    android:id="@+id/studiespresentationbutton"
+                        android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/studiesl" />
+
+                <Button
+                    android:id="@+id/membersbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/members" />
+
+                <Button
+                    android:id="@+id/becomeamemberbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/becomemember" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/maincontentholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
